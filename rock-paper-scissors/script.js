@@ -19,11 +19,11 @@ function getHumanChoice(){
 };
 
 function playRound() {
-    let computerChoice = getComputerChoice();
-    console.log("Computer choice: "+ computerChoice)
     let humanChoice = getHumanChoice();
     console.log("Human choice: " + humanChoice)
-
+    let computerChoice = getComputerChoice();
+    console.log("Computer choice: "+ computerChoice)
+    
     if(computerChoice === humanChoice) return "Draw"
 
     if(computerChoice === "rock"){
@@ -57,6 +57,15 @@ function playRound() {
     }
 };
 
-console.log(playRound())
-console.log("Computer score: " + computerScore)
-console.log("Human score: " + humanScore)
+function playGame(){
+    
+    while(computerScore < 3 && humanScore < 3){
+        playRound()
+        console.log("Computer score: " + computerScore)
+        console.log("Human score: " + humanScore)
+    }
+
+    if(computerScore > humanScore) return "You lose the game!\nYour score: "+humanScore+"\nComputer score: "+computerScore
+}
+
+console.log(playGame())
