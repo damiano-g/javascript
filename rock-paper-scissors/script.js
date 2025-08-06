@@ -58,14 +58,23 @@ function playRound() {
 };
 
 function playGame(){
-    
+
+    let res
+
     while(computerScore < 3 && humanScore < 3){
-        playRound()
+        let res = playRound()
+        console.log(res)
+        console.log("Your score: " + humanScore)
         console.log("Computer score: " + computerScore)
-        console.log("Human score: " + humanScore)
     }
 
-    if(computerScore > humanScore) return "You lose the game!\nYour score: "+humanScore+"\nComputer score: "+computerScore
+    if(computerScore > humanScore) {
+        res = "You lose the game!"
+    }else{
+        res = "You win the game!"
+    }
+
+    return res+"\nYour final score: "+humanScore+"\nComputer final score: "+computerScore
 }
 
 console.log(playGame())
