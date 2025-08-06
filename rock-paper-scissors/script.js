@@ -11,4 +11,15 @@ function getComputerChoice(){
     return "paper"
 };
 
-console.log(getComputerChoice())
+function getHumanChoice(){
+    let sel = prompt("Select 'r' for rock, 'p' for paper or 's' for scissors.");
+    if (sel === "r"){
+        return "rock"
+    }
+    if (sel === "p"){
+        return "paper"
+    }
+    return "scissors"
+};
+
+console.log(getHumanChoice())
