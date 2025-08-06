@@ -1,3 +1,5 @@
+let computerScore = 0
+let humanScore = 0
 
 function getComputerChoice(){
     let rnd = Math.random();
@@ -15,6 +17,7 @@ function getHumanChoice(){
     let sel = prompt("Select rock, paper or scissors.");
     return sel.toLowerCase
 };
+
 
 
 console.log(getHumanChoice())
