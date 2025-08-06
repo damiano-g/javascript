@@ -15,12 +15,14 @@ function getComputerChoice(){
 
 function getHumanChoice(){
     let sel = prompt("Select rock, paper or scissors.");
-    return sel.toLowerCase
+    return sel.toLowerCase()
 };
 
 function playRound() {
     let computerChoice = getComputerChoice();
+    console.log("Computer choice: "+ computerChoice)
     let humanChoice = getHumanChoice();
+    console.log("Human choice: " + humanChoice)
 
     if(computerChoice === humanChoice) return "Draw"
 
