@@ -12,14 +12,9 @@ function getComputerChoice(){
 };
 
 function getHumanChoice(){
-    let sel = prompt("Select 'r' for rock, 'p' for paper or 's' for scissors.");
-    if (sel === "r"){
-        return "rock"
-    }
-    if (sel === "p"){
-        return "paper"
-    }
-    return "scissors"
+    let sel = prompt("Select for rock, for paper or for scissors.");
+    return sel.toLowerCase
 };
+
 
 console.log(getHumanChoice())
