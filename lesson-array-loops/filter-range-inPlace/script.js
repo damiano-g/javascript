@@ -4,11 +4,18 @@ let max = 7;
 
 function filterRange(arr, min, max){
 
+    let tempArr = [];
+
     for(let i=0; i < myArr.length; i++){
-        if(myArr[i] <= min || myArr[i] >= max){
-            myArr.splice(i,1);
+        if(myArr[i] >= min || myArr[i] <= max){
+            tempArr.push(myArr[i]);        
         }
     }
+
+    myArr = tempArr;
 }
 
+filterRange(myArr, min, max);
+
+//alert(myArr);
 console.log(myArr);
