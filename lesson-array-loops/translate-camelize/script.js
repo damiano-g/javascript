@@ -9,7 +9,7 @@ function camelize(str){
         myArray[i] = newString;
     }
 
-    myString = myArray.join('');
+    return myString = myArray.join('');
 }
 
 console.log(camelize(myString))
