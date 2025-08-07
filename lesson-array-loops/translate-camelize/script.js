@@ -1,4 +1,4 @@
-let myString = "test-string";
+let myString = "test-string-used-for-camelize-function-testing";
 
 let myArray = myString.split('-');
 
