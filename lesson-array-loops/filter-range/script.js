@@ -6,7 +6,7 @@ let max = 7;
 function filterRange(arr, min, max){
 
     for(let i=0; i < myArr.length; i++){
-        if(myArr[i] <= min || myArr >= max){
+        if(myArr[i] <= min || myArr[i] >= max){
             filteredArr.push(myArr[i]);
         }
     }
