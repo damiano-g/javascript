@@ -19,3 +19,6 @@ para.style.backgroundColor = "black";
 para.style.padding = "10px";
 para.style.width = "250px";
 para.style.textAlign = "center";*/
+
+//add class highlight to pra element
+para.setAttribute("class", "highlight");
