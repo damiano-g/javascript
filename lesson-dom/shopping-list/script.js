@@ -3,8 +3,8 @@ const inElem = document.querySelector("input");
 const but = document.querySelector("button");
 
 function buttonPressed(){
-    let inputValue = inElem.value();
-    inElem.value() = "";
+    let inputValue = inElem.value;
+    inElem.value = "";
 
     const listElem = document.createElement("li");
     const text = document.createElement("span");
@@ -13,10 +13,10 @@ function buttonPressed(){
     listElem.appendChild(text);
     listElem.appendChild(delBut);
 
-    text.textContent(inputValue);
-    delBut.textContent("Delete");
+    text.textContent = inputValue;
+    delBut.textContent = "Delete";
 
     list.appendChild(listElem);
 }
 
-but.addEventListener("click", buttonPressed());
+but.addEventListener("click", buttonPressed);
