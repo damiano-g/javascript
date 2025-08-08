@@ -1,3 +1,5 @@
 const link = document.querySelector("a");
 
-link.textContent = "Mozilla Developper Network";
+link.textContent = "Mozilla Developer Network";
+
+link.href = "https://developer.mozzila.org";
