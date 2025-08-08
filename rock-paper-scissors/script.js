@@ -1,6 +1,8 @@
 let computerScore = 0
 let humanScore = 0
 
+const btn = document.querySelector("button");
+
 function getComputerChoice(){
     let rnd = Math.random();
     
@@ -55,7 +57,7 @@ function playRound() {
     }
 };
 
-function playGame(){
+/*function playGame(){
 
     let res
 
@@ -70,6 +72,9 @@ function playGame(){
     }
 
     return res+"\nYour final score: "+humanScore+"\nComputer final score: "+computerScore
-}
+}*/
+
+
+btn.addEventListener("click", playRound());
 
 
