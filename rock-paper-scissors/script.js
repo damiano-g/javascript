@@ -20,9 +20,7 @@ function getHumanChoice(){
 
 function playRound() {
     let humanChoice = getHumanChoice();
-    console.log("Human choice: " + humanChoice)
     let computerChoice = getComputerChoice();
-    console.log("Computer choice: "+ computerChoice)
     
     if(computerChoice === humanChoice) return "Draw"
 
@@ -62,10 +60,7 @@ function playGame(){
     let res
 
     while(computerScore < 3 && humanScore < 3){
-        let res = playRound()
-        console.log(res)
-        console.log("Your score: " + humanScore)
-        console.log("Computer score: " + computerScore)
+        let res = playRound();
     }
 
     if(computerScore > humanScore) {
