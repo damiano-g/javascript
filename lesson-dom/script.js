@@ -1,6 +1,7 @@
 const link = document.querySelector("a");
 const sect = document.querySelector("section");
 const para = document.createElement("p");
+const text = document.createTextNode("- the premier source for web development knowledge.");
 
 link.textContent = "Mozilla Developer Network";
 
