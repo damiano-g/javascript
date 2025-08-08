@@ -3,6 +3,8 @@ let humanScore = 0
 let humanChoice;
 
 const btn = document.querySelector("button");
+const yourPlay = document.querySelector("#yourPlay");
+const compPlay = document.querySelector("#compPlay");
 
 function getComputerChoice(){
     let rnd = Math.random();
@@ -24,6 +26,12 @@ function getComputerChoice(){
 function playRound() {
     //let humanChoice = getHumanChoice();
     let computerChoice = getComputerChoice();
+
+    const play = document.createElement("span");
+
+    play.innerText = computerChoice;
+
+    compPlay.appendChild(play);
     
     if(computerChoice === humanChoice) return "Draw"
 
