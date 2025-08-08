@@ -77,4 +77,4 @@ function playGame(){
     return res+"\nYour final score: "+humanScore+"\nComputer final score: "+computerScore
 }
 
-console.log(playGame())
+
