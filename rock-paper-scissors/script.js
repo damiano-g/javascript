@@ -1,5 +1,6 @@
 let computerScore = 0
 let humanScore = 0
+let humanChoice;
 
 const btn = document.querySelector("button");
 
@@ -15,13 +16,13 @@ function getComputerChoice(){
     return "paper"
 };
 
-function getHumanChoice(){
+/*function getHumanChoice(){
     let sel = prompt("Select rock, paper or scissors.");
     return sel.toLowerCase()
-};
+};*/
 
 function playRound() {
-    let humanChoice = getHumanChoice();
+    //let humanChoice = getHumanChoice();
     let computerChoice = getComputerChoice();
     
     if(computerChoice === humanChoice) return "Draw"
@@ -75,6 +76,7 @@ function playRound() {
 }*/
 
 
-btn.addEventListener("click", playRound());
+btn.addEventListener("click", playRound);
+btn.addEventListener("click", ()=>humanChoice = btn.innerText);
 
 
