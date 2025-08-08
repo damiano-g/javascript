@@ -6,7 +6,7 @@ const paraLink = document.querySelector("p");
 
 link.textContent = "Mozilla Developer Network";
 
-link.href = "https://developer.mozzila.org";
+link.href = "https://developer.mozzilla.org";
 
 para.textContent = "We hope you enjoyed the ride.";
 
